@@ -1,0 +1,129 @@
+.productdisplay{
+    display: flex;
+    margin: 0px 170px;
+}
+
+.productdisplay-left{
+    display: flex;
+    gap: 3rem;
+}
+
+.productdisplay-img-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.productdisplay-img-list img{
+    height: 123px;
+}
+
+.productdisplay-main-img{
+    width: 550px;
+    height: 540px;
+}
+
+.productdisplay-right{
+    margin: 0px 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.productdisplay-right h1{
+    color: #eee6e6;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.productdisplay-right-star{
+    display: flex;
+    align-items: center;
+    margin-top: 13px;
+    gap: 0.3rem;
+    font-size: 1rem;
+    color: rgb(255, 66, 3);
+}
+
+.productdisplay-right-star .dull-star{
+    color: #ccc;
+}
+
+.productdisplay-right-star p{
+    color: #ccc;
+}
+
+.productdisplay-right-prices{
+    display: flex;
+    margin: 20px 0px;
+    gap: 1rem;
+    font-size: 1rem;
+    font-weight: 650;
+}
+
+.productdisplay-right-price-old{
+    color: #818181;
+    text-decoration: line-through;
+}
+
+.productdisplay-right-price-new{
+    color: #ff4141;
+}
+
+.productdisplay-right-quantity h1{
+    margin-top: 1rem;
+    color: #ab7272;
+    font-size: 1rem;
+    font-weight: 650;
+}
+
+.productdisplay-right-quantities{
+    display: flex;
+    margin: 30px 0px;
+    gap: 1rem;
+}
+
+.productdisplay-right-quantities div{
+    padding: 10px 16px;
+    background: var(color-green-light);
+    border: 1px solid var(--color-success-variant);
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.productdisplay-right-quantities div:hover{
+    background: transparent;
+    border-color: var(--color-blue);
+}
+
+.productdisplay-right button{
+    padding: 10px 20px;
+    width: 180px;
+    height: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid transparent;
+    color: #fff;
+    background: #ff4141;
+    margin-bottom: 20px;
+    /* border-radius: 1rem; */
+    cursor: pointer;
+    outline: none;
+    transition: var(--transition);
+}
+
+.productdisplay-right button:hover{
+    background: transparent;
+    border-color: var(--color-success-variant);
+    color: var(--color-primary);
+}
+
+.product-display-right-category{
+    margin-top: 0.7rem;
+}
+
+.product-display-right-category span{
+    font-weight: 550;
+    color: #ff4141;
+}

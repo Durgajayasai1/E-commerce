@@ -1,13 +1,102 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+    --color-bg: #01160b;
+    /* --color-bg: #044E28; */
+    --color-primary: #4db5ff;
+    --color-primary-green: #00FFE0;
+    --color-bg-variant: #2c2c6c;
+    --color-primary-variant: rgba(77,181,255,0.4);
+    --color-white: #fff;
+    --color-light: rgba(255,255,255,0.6);
+    --color-success: #02e0b8;
+    --color-warning: #f7c94b;
+    --color-danger: #f75842;
+    --color-danger-variant: rgba(247, 88, 66, 0.4);
+    --color-success-variant: rgba(66, 247, 244, 0.4);
+    --color-red-light: hsl(346, 87%, 46%, 15%);
+    --color-green-light: hsl(156, 100%, 38%, 15%);
+    --color-bg1: #2e3267;
+    --color-bg2: #424890;
+    --color-blue: #00b0ff;
+    --color-blue-variant: #1da1de77;
+    --color-bg3: #2e326775;
+    --color-dark-green: hsla(156, 83%, 5%, 0.878);
+
+    --container-width-lg: 75%;
+    --container-width-md: 86%;
+    --container-width-sm: 90%;
+
+    --transition: all 400ms ease;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: var(--color-bg);
+    color: var(--color-white);
+    line-height: 1.7;
+    background-image: url('./components/assets/bg1.png');
+}
+
+.text-light{
+    color: var(--color-light);
+}
+
+a{
+    color: var(--color-primary-green);
+    transition: var(--transition);
+}
+
+a:hover{
+    color: var(--color-white);
+}
+
+.btn{
+    width: max-content;
+    display: inline-block;
+    color: var(--color-primary-green);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary-green);
+    transition: var(--transition);
+}
+
+.btn:hover{
+    background: var(--color-white);
+    color: var(--color-dark-green);
+    border-color: transparent;
+}
+
+.btn-primary{
+    background: var(--color-primary-green);
+    color: var(--color-bg);
+}
+
+.text-light{
+    color: var(--color-light);
+}
+
+h5{
+    text-align: center;
+    color: var(--color-light);
+    font-weight: 500;
 }
